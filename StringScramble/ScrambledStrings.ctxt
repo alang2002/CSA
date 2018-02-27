@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ScrambledStrings
+comment1.params=word
+comment1.target=java.lang.String\ scrambleWord(java.lang.String)
+comment1.text=\ Scrambles\ a\ given\ word.\r\n\ \ @param\ word\ the\ word\ to\ be\ scrambled\r\n\ \ @return\ the\ scrambled\ word\ (possibly\ equal\ to\ word)\r\n\ \ Precondition\:\ word\ is\ either\ an\ empty\ string\ or\ contains\r\n\ \ \ \ only\ uppercase\ letters.\r\n\ \ Postcondition\:\ the\ string\ returned\ was\ created\ from\ word\r\n\ \ \ \ \ \ as\ follows\:\r\n\ \ \ -\ the\ word\ was\ scrambled,\ beginning\ at\ the\ first\ letter\r\n\ \ \ \ \ \ and\ continuing\ from\ left\ to\ right\r\n\ \ \ -\ two\ consecutive\ letters\ consisting\ of\ "A"\ followed\ by\r\n\ \ \ \ \ \ \ \ a\ letter\ that\ was\ not\ "A"\ were\ swapped\r\n\ \ \ -\ letters\ were\ swapped\ at\ most\ once\r\n
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=Test\ ********************
+numComments=3
