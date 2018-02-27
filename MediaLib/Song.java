@@ -7,12 +7,11 @@
  */
 public class Song
 {
-  
     private int rating;
     private String title;
     private double price;
     private boolean favorite;
-    
+
     /**
      * Constructor for objects of class Song
      */
@@ -25,12 +24,11 @@ public class Song
         favorite = false;
     }
 
-    /*
-    public Song(String title, double price) {
-    this.title = title;
-    this.price = price;
+    public Song(String title) {
+        this.title = title;
     }
 
+    /*
     public Song(int rating) {
     this.rating = rating;
     }
@@ -43,18 +41,21 @@ public class Song
         //this.totalCost += totalCost + price;
         //this.numSongs += numSongs + 1;
     }
-    
-    
+
     public double getPrice() {
         return price;
     }
-    
+
     public int getRating() {
         return rating;
     }
-    
+
     public String getTitle() {
         return title;
+    }
+    
+    public void setTitle(String t) {
+        title = t;
     }
 
     /*
@@ -62,15 +63,15 @@ public class Song
      * LEAVE THESE METHODS ALONE, DO NOT TOUCH. 
      * 
      *
-    
+
     public double getAverageCost() {
-        this.averageCost = this.totalCost / this.numSongs;
-        return averageCost;
+    this.averageCost = this.totalCost / this.numSongs;
+    return averageCost;
     }
 
     public double getAverageRating() {
-        this.averageRating = totalRatings / numSongs;
-        return averageRating;
+    this.averageRating = totalRatings / numSongs;
+    return averageRating;
     }
-    */
+     */
 }
