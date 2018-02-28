@@ -8,7 +8,7 @@ comment2.params=title
 comment2.target=Song(java.lang.String)
 comment3.params=title\ price\ rating
 comment3.target=Song(java.lang.String,\ double,\ int)
-comment3.text=\r\n\ \ \ \ public\ Song(int\ rating)\ {\r\n\ \ \ \ this.rating\ \=\ rating;\r\n\ \ \ \ }\r\n
+comment3.text=\r\n\ \ \ \ public\ Song(String\ title,\ double\ price)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ this.title\ \=\ title;\r\n\ \ \ \ \ \ \ \ this.price\ \=\ price;\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ public\ Song(int\ rating)\ {\r\n\ \ \ \ this.rating\ \=\ rating;\r\n\ \ \ \ }\r\n
 comment4.params=
 comment4.target=double\ getPrice()
 comment5.params=
@@ -17,4 +17,6 @@ comment6.params=
 comment6.target=java.lang.String\ getTitle()
 comment7.params=t
 comment7.target=void\ setTitle(java.lang.String)
-numComments=8
+comment8.params=p
+comment8.target=void\ setPrice(double)
+numComments=9

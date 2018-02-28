@@ -10,8 +10,9 @@ public class ArrayMediaLib
     public static void main() {
         String [] sharingFriends = {"Nevyn", "Richards", "Massey", "Keegan", "Stalin"};
         int [] daysBtwnPurchase = {2, 5, 1, 2, 4, 2, 1, 3};
-        Song [] topTenSongs = {new Song("The Twist"), new Song("Smooth"), new Song("Mack The Knife"), new Song("How Do I Live"), new Song("Party Rock Anthem"), 
-                new Song("I Gotta Feeling"), new Song("Macarena (Bayside Boys Mix)"), new Song("Physical"), new Song("You Light Up My Life"), new Song("Hey Jude")};
+        Song [] topTenSongs = {new Song("The Twist"), new Song("Smooth"), new Song("Mack The Knife"), new Song("How Do I Live"), 
+                new Song("Party Rock Anthem"), new Song("I Gotta Feeling"), new Song("Macarena (Bayside Boys Mix)"), new Song("Physical"), 
+                new Song("You Light Up My Life"), new Song("Hey Jude")};
         int runningTotal = 0;
         for (int i = 0; i < sharingFriends.length; i++) {
             System.out.println(sharingFriends[i]);
@@ -25,17 +26,27 @@ public class ArrayMediaLib
         {
             System.out.println(s.getTitle());
         }
+        for (Song changeSong : topTenSongs) {
+            changeSong.setPrice(1.00);
+        }
 
-        // change the array
+        /* change the array
         System.out.println("-BEFORE--");
         for (Song changeSong : topTenSongs) {
-            changeSong= new Song("test");
-            System.out.println(changeSong.getTitle());
+        changeSong= new Song("test");
+        System.out.println(changeSong.getTitle());
         }
         // show the array
         System.out.println("-AFTER--");
         for (Song showSong : topTenSongs) {
-            System.out.println(showSong.getTitle());
+        System.out.println(showSong.getTitle());
         }
+
+        for (int i = 0; i < topTenSongs.length; i++) {
+        topTenSongs[i] = new Song("test");
+        }
+        for (Song showSong : topTenSongs) {
+        System.out.println(showSong.getTitle());
+        }*/
     }
 }

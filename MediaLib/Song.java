@@ -27,8 +27,13 @@ public class Song
     public Song(String title) {
         this.title = title;
     }
-
     /*
+    public Song(String title, double price)
+    {
+        this.title = title;
+        this.price = price;
+    }
+    
     public Song(int rating) {
     this.rating = rating;
     }
@@ -56,6 +61,10 @@ public class Song
     
     public void setTitle(String t) {
         title = t;
+    }
+    
+    public void setPrice(double p) {
+        price = p;
     }
 
     /*
