@@ -15,6 +15,14 @@ public class ArrayMediaLib
                 new Song("You Light Up My Life"), new Song("Hey Jude")};
         int runningTotal = 0;
         int counter = 0;
+        int index = SongFinder.findTitle(topTenSongs, "Smooth");
+        if (index >=0 ) {
+            System.out.println("Found " + topTenSongs[index].getTitle());
+        }
+        else  {
+            System.out.println("Song not found!");
+        }
+
         for (int i = 0; i < sharingFriends.length; i++) {
             System.out.println(sharingFriends[i]);
         }
@@ -53,6 +61,14 @@ public class ArrayMediaLib
                 System.out.println(song.getTitle() + " " + song.getPrice());
                 counter = 0;
             }
+        }
+        System.out.println();
+        index = SongFinder.getIndexLastDiscount(topTenSongs, 1.00);
+        if (index >= 0 ) {
+            System.out.println("Discount found " + topTenSongs[index].getTitle());
+        }
+        else {
+            System.out.println("No songs are discounted");
         }
 
         /* change the array
