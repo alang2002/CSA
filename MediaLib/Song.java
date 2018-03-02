@@ -27,17 +27,13 @@ public class Song
     public Song(String title) {
         this.title = title;
     }
-    /*
-    public Song(String title, double price)
+
+    public Song(String title, int rating)
     {
         this.title = title;
-        this.price = price;
+        this.rating = rating;
     }
-    
-    public Song(int rating) {
-    this.rating = rating;
-    }
-     */
+
     public Song(String title, double price, int rating) {
         this.title = title;
         this.price = price;

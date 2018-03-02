@@ -71,6 +71,15 @@ public class ArrayMediaLib
             System.out.println("No songs are discounted");
         }
 
+        System.out.println("--Find last song --");
+        index = SongFinder.getIndexLastTitle(topTenSongs);
+        if (index >= 0 ) {
+            System.out.println("Last title: " + topTenSongs[index].getTitle());
+        }
+        else {
+            System.out.println("You have a blank title!");
+        }
+
         /* change the array
         System.out.println("-BEFORE--");
         for (Song changeSong : topTenSongs) {
