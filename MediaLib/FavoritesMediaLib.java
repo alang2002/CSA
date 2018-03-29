@@ -70,10 +70,12 @@ public class FavoritesMediaLib
            song = song.substring(0, song.length()-1) + "(" + song.substring(song.length()-1) + ")";
            start = pipe+1;
            pipe = line.indexOf("|", start);
-           
+           System.out.println(song);
+           /*
            if(songRating >= 4) {
                System.out.println(song);  
            }
+           */
         }
        
         MediaFile.saveAndClose();

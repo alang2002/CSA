@@ -54,11 +54,11 @@ public class Song
     public String getTitle() {
         return title;
     }
-    
+
     public void setTitle(String t) {
         title = t;
     }
-    
+
     public void setPrice(double p) {
         price = p;
     }

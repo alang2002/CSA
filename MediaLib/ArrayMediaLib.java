@@ -15,7 +15,7 @@ public class ArrayMediaLib
                 new Song("You Light Up My Life"), new Song("Hey Jude")};
         int runningTotal = 0;
         int counter = 0;
-        int index = SongFinder.findTitle(topTenSongs, "Smooth");
+        int index = SongFinder.findTitle(topTenSongs, "Mack The Knife");
         if (index >=0 ) {
             System.out.println("Found " + topTenSongs[index].getTitle());
         }

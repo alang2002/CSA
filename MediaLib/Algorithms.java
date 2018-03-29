@@ -49,16 +49,14 @@ public class Algorithms
         // Note that ratings are not kept between songs but that's not what is required
         String songToDelete = "I Gotta Feeling";
         String songToCopy = null;
-        int index = 0;
-        int index2 = 0;
+        int nextSong = 0;
         int lastIndex = 9;
         for (int i = 0; i < topTenSongs.length - 1; i++) {
             if (topTenSongs[i].getTitle().equals(songToDelete)) {
-                index = i;
-                index2 = index + 1;
-                songToCopy = topTenSongs[index2].getTitle();
-                songToDelete = topTenSongs[index2].getTitle();
-                topTenSongs[index].setTitle(songToCopy);
+                nextSong = i + 1;
+                songToCopy = topTenSongs[nextSong].getTitle();
+                songToDelete = topTenSongs[nextSong].getTitle();
+                topTenSongs[i].setTitle(songToCopy);
             }
             // If the last song in the array is the same as the one before it, change the song to "null"
             if (topTenSongs[lastIndex].getTitle().equals(topTenSongs[8].getTitle())) {

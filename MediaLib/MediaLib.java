@@ -70,19 +70,5 @@ public class MediaLib
         System.out.println("Total ratings: " + totalRatings);
         System.out.println("Average cost: " + averageCost);
         System.out.println("Average rating: " + averageRating);
-        
-        /* Movies and book
-        movies1.setName("Soviets In Arms"); 
-        System.out.println(movies1.getName());
-        movies1.setScore(100);
-        System.out.println(movies1.getScore());
-        movies1.setDuration(141);
-        movies1.printDuration();
-
-        book1.setBTitle("The Communist Manifesto");
-        System.out.println(book1.getBTitle());
-        book1.setReview(100);
-        System.out.println(book1.getReview());
-        */
     }
 }
